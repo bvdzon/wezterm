@@ -49,6 +49,10 @@ config = {
 		{ key = "LeftArrow", mods = "CMD", action = action.SendKey({ key = "Home" }) },
 		{ key = "RightArrow", mods = "CMD", action = action.SendKey({ key = "End" }) },
 		{ key = "p", mods = "CMD|SHIFT", action = action.ActivateCommandPalette },
+		{ key = "LeftArrow", mods = "ALT", action = action.ActivatePaneDirection("Left") },
+		{ key = "RightArrow", mods = "ALT", action = action.ActivatePaneDirection("Right") },
+		{ key = "UpArrow", mods = "ALT", action = action.ActivatePaneDirection("Up") },
+		{ key = "DownArrow", mods = "ALT", action = action.ActivatePaneDirection("Down") },
 	},
 }
 -- No edits after this line --
