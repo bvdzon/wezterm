@@ -48,6 +48,8 @@ config = {
 		{ key = "w", mods = "CMD|SHIFT", action = action.CloseCurrentTab({ confirm = false }) },
 		{ key = "LeftArrow", mods = "CMD", action = action.SendKey({ key = "Home" }) },
 		{ key = "RightArrow", mods = "CMD", action = action.SendKey({ key = "End" }) },
+		{ key = "LeftArrow", mods = "CMD|SHIFT", action = action.SendKey({ key = "Home", mods = "SHIFT" }) },
+		{ key = "RightArrow", mods = "CMD|SHIFT", action = action.SendKey({ key = "End", mods = "SHIFT" }) },
 		{ key = "p", mods = "CMD|SHIFT", action = action.ActivateCommandPalette },
 		{ key = "LeftArrow", mods = "ALT", action = action.ActivatePaneDirection("Left") },
 		{ key = "RightArrow", mods = "ALT", action = action.ActivatePaneDirection("Right") },
